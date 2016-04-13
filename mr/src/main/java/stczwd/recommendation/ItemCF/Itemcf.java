@@ -56,11 +56,11 @@ class RecommenderIntro {
 		dataSource.setServerName("123.57.223.22"); 
 		dataSource.setUser("root"); 
 		dataSource.setPassword("12345");
-		dataSource.setDatabaseName("stczwd");
+		dataSource.setDatabaseName("LogisticRecommendation");
 		dataSource.setAutoReconnect(true);
 //		dataSource.setConnectTimeout(31536000);
-		JDBCDataModel datamodel = new MySQLJDBCDataModel(dataSource, "mysqlmodel", 
-		"userID", "itemID", "prefvalue",null);
+		JDBCDataModel datamodel = new MySQLJDBCDataModel(dataSource, "UserItemPref", 
+		"userID", "itemID", "Pref",null);
 		ItemSimilarity similarity = new UncenteredCosineSimilarity(datamodel);
 		Recommender recommender = new GenericItemBasedRecommender(datamodel,
 				similarity);

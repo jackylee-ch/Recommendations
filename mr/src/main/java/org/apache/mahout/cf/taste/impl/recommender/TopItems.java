@@ -82,6 +82,7 @@ public final class TopItems {
         double preference;
         try {
           //生成该itemID的估计偏好值，而且这个偏好值不会超过已有偏好值的范围
+          //此处查看GenericItemBasedRecommender的Estimator的estimate方法
           preference = estimator.estimate(itemID);
         } catch (NoSuchItemException nsie) {
           continue;

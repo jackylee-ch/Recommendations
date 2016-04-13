@@ -21,6 +21,8 @@ import org.apache.mahout.cf.taste.common.TasteException;
 import org.apache.mahout.cf.taste.common.Weighting;
 import org.apache.mahout.cf.taste.model.DataModel;
 
+import stczwd.database.mysql.MysqlConnect;
+
 import com.google.common.base.Preconditions;
 
 /**
@@ -54,7 +56,6 @@ public final class UncenteredCosineSimilarity extends AbstractSimilarity {
     Preconditions.checkArgument(dataModel.hasPreferenceValues(), "DataModel doesn't have preference values");
   }
 
-  @Override
   double computeResult(int n, double sumXY, double sumX2, double sumY2, double sumXYdiff2) {
     if (n == 0) {
       return Double.NaN;

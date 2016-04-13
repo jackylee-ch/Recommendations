@@ -34,5 +34,6 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="F:/LJQ/Java/Workspaces/MyEclipseProfessional2014/External Jars/mahout-0.10.0/mahout-integration-0.10.0.jar"/>
 	<classpathentry kind="lib" path="F:/LJQ/Java/Workspaces/MyEclipseProfessional2014/External Jars/mahout-0.10.0/mysql-connector-java-5.1.36.jar"/>
+	<classpathentry kind="lib" path="C:/Users/minelab/Desktop/apache-log4j-1.2.17/log4j-1.2.17.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

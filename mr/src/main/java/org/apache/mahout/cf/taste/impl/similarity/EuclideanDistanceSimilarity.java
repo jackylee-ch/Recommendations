@@ -21,6 +21,8 @@ import org.apache.mahout.cf.taste.common.TasteException;
 import org.apache.mahout.cf.taste.common.Weighting;
 import org.apache.mahout.cf.taste.model.DataModel;
 
+import stczwd.database.mysql.MysqlConnect;
+
 import com.google.common.base.Preconditions;
 
 /**

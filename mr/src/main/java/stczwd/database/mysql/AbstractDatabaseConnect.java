@@ -1,5 +1,6 @@
 package stczwd.database.mysql;
 
+import java.sql.Connection;
 import java.sql.ResultSet;
 
 /**
@@ -11,6 +12,7 @@ public interface AbstractDatabaseConnect {
 
 	/**
 	 * 数据库连接接口方法
+	 * @return 
 	 */
 	public void databaseconnect();
 	
@@ -29,6 +31,7 @@ public interface AbstractDatabaseConnect {
 	
 	/**
 	 * 数据库的关闭
+	 * @return 
 	 */
-	public void databaseclose();
+	public Boolean databaseclose();
 }
